@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fridgie: Bill Tracker</title>
+  <meta name="description" content="Your bills, on the fridge. Every bill is a slip under a magnet on a 3D fridge door. Stamp it PAID when you pay, and get reminded before it's due." />
+  <meta name="theme-color" content="#F2F5F2" />
+  <meta property="og:title" content="Fridgie: Bill Tracker" />
+  <meta property="og:description" content="Your bills, on the fridge. Stamp them PAID, and never miss a due date." />
+  <meta property="og:image" content="assets/screens/kitchen.png" />
+  <link rel="icon" href="assets/icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="./src/landing.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" /> Fridgie</a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <img class="hero-icon" src="assets/icon.png" alt="Fridgie app icon" width="88" height="88" />
+          <h1>Your bills, on the fridge.</h1>
+          <p class="lede">Every bill becomes a slip under a magnet on your fridge door. A yellow flag when it’s due soon, a red magnet when it’s late, and a big blue <strong>PAID</strong> stamp when you’ve paid it.</p>
+          <div class="cta-row">
+            <a class="store-badge" href="#" aria-disabled="true">
+              <svg width="20" height="24" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span><small>Coming soon to the</small>App Store</span>
+            </a>
+            <span class="note">Free · iPhone and iPad · iOS 26</span>
+          </div>
+        </div>
+        <div class="hero-phone">
+          <img src="assets/screens/kitchen.png" alt="The Fridgie kitchen: a white fridge with bill slips on its door, a counter and a calendar on the wall" width="412" height="866" />
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <span class="eyebrow">How it works</span>
+        <h2>Three steps, every month.</h2>
+        <ol class="steps">
+          <li><span class="step-n">1</span><h3>Put your bills up</h3><p>Rent, power, water, internet, cards, loans, tuition, taxes. Pick what kind of bill it is: the same every time, different each time, installments, or one-off.</p></li>
+          <li><span class="step-n">2</span><h3>Get reminded</h3><p>A heads-up before each bill is due, on the day, and again if it’s late. For bills that change, Fridgie asks you for the amount.</p></li>
+          <li><span class="step-n">3</span><h3>Stamp it PAID</h3><p>Tap the slip, check the amount, and the stamp comes down. Changed your mind? Undo is right there.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section tint">
+      <div class="wrap split">
+        <div class="split-copy">
+          <span class="eyebrow">At a glance</span>
+          <h2>Every slip tells you where it stands.</h2>
+          <ul class="states">
+            <li><span class="dot flag"></span><div><strong>Yellow flag</strong> Due today or in the next 7 days.</div></li>
+            <li><span class="dot late"></span><div><strong>Red magnet</strong> Overdue, with how many days late.</div></li>
+            <li><span class="dot paid"></span><div><strong>PAID stamp</strong> Paid, until the next one comes close.</div></li>
+            <li><span class="dot loan"></span><div><strong>Progress bar</strong> Installments, like “8 of 24 paid”.</div></li>
+          </ul>
+          <p>The notepad on the freezer door adds up the month: what’s due, what’s paid and what’s left.</p>
+        </div>
+        <img class="phone-shot" src="assets/screens/mark-paid.png" alt="Marking an electricity bill paid: the amount, the date and what it was paid with" width="412" height="866" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow">Features</span>
+        <h2>Made for real household bills.</h2>
+        <div class="features">
+          <article><h3>Bills that change</h3><p>Electricity and water are different every month. Fridgie estimates from your last three bills until you type the real amount.</p></article>
+          <article><h3>Loans that count down</h3><p>See how many payments are made, what’s left to pay, and when it ends.</p></article>
+          <article><h3>Autopay</h3><p>For direct debits, Fridgie marks the bill paid on its due date, so the fridge stays right without you.</p></article>
+          <article><h3>Kitchen calendar</h3><p>Slide along the wall to the calendar: due days circled in blue, red or yellow.</p></article>
+          <article><h3>History</h3><p>What you actually paid each month, by category, and how often you paid on time.</p></article>
+          <article><h3>Widgets</h3><p>Due soon on your Home Screen, free. Next bill, This month, a mini fridge and Lock Screen widgets with Pro.</p></article>
+          <article><h3>Any currency</h3><p>Each bill keeps its own currency; totals are converted into yours.</p></article>
+          <article><h3>Private by design</h3><p>No account, no bank connection, no tracking. Your bills stay on your phone.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tint">
+      <div class="wrap split reverse">
+        <img class="phone-shot" src="assets/screens/pro-fridge.png" alt="The Pro side-by-side fridge: a blue display and 20 spots across two stainless doors" width="412" height="866" loading="lazy" />
+        <div class="split-copy">
+          <span class="eyebrow">Fridgie Pro</span>
+          <h2>Upgrade the fridge.</h2>
+          <p>Free fits 5 bills on a white single-door fridge. Pro swaps it for a stainless side-by-side with room for 20, and a blue display that tells you what’s left to pay this month.</p>
+          <p>Pro also adds full history, the Pro widgets, kitchen themes, calendar styles, Face ID lock and app icons.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="wrap">
+        <span class="eyebrow">Pricing</span>
+        <h2>Free to start. Pro when your fridge fills up.</h2>
+        <div class="plans">
+          <article class="plan">
+            <h3>Free</h3>
+            <p class="price">₱0</p>
+            <ul><li>5 bills on a single-door fridge</li><li>Reminders and overdue nudges</li><li>3 months of history</li><li>Due soon widget</li></ul>
+          </article>
+          <article class="plan featured">
+            <span class="badge">7 days free</span>
+            <h3>Pro Yearly</h3>
+            <p class="price">₱799 <small>/ year</small></p>
+            <ul><li>Side-by-side fridge, 20 bills</li><li>Full history</li><li>All widgets</li><li>Themes, Face ID lock, icons</li></ul>
+          </article>
+          <article class="plan">
+            <h3>Pro Monthly</h3>
+            <p class="price">₱99 <small>/ month</small></p>
+            <ul><li>Everything in Pro</li><li>Cancel anytime</li></ul>
+          </article>
+          <article class="plan">
+            <h3>Lifetime</h3>
+            <p class="price">₱1,490 <small>once</small></p>
+            <ul><li>Everything in Pro</li><li>No subscription</li></ul>
+          </article>
+        </div>
+        <p class="fineprint">Prices in the Philippines. The App Store shows the price in your country before you buy.</p>
+      </div>
+    </section>
+
+    <section class="section tint">
+      <div class="wrap split">
+        <div class="split-copy">
+          <span class="eyebrow">Questions?</span>
+          <h2>We’re here to help.</h2>
+          <p>Read the answers to common questions on the <a href="support.html">Support page</a>, or email <a href="mailto:tania.dev.ph@gmail.com?subject=Fridgie">tania.dev.ph@gmail.com</a>.</p>
+        </div>
+        <img class="phone-shot" src="assets/screens/calendar.png" alt="The Calendar tab with due days circled by status" width="412" height="866" loading="lazy" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Fridgie</span>
+      <span><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></span>
+    </div>
+  </footer>
+</body>
+</html>

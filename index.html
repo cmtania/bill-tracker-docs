@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fridgie: Bill Tracker</title>
-  <meta name="description" content="Your bills, on the fridge. Every bill is a slip under a magnet on a 3D fridge door. Stamp it PAID when you pay, and get reminded before it's due." />
-  <meta name="theme-color" content="#F2F5F2" />
+  <meta name="description" content="Your bills, on the fridge. Every bill is a slip under a magnet on a 3D fridge door. Get reminded before it’s due, stamp it PAID, and keep a receipt for every month." />
+  <meta name="theme-color" content="#FFFDF6" />
   <meta property="og:title" content="Fridgie: Bill Tracker" />
-  <meta property="og:description" content="Your bills, on the fridge. Stamp them PAID, and never miss a due date." />
+  <meta property="og:description" content="Your bills, on the fridge. Get reminded, stamp them PAID, and never miss a due date." />
   <meta property="og:image" content="assets/screens/kitchen.png" />
   <link rel="icon" href="assets/icon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/icon.png" />
@@ -29,20 +29,21 @@
     <section class="hero">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <img class="hero-icon" src="assets/icon.png" alt="Fridgie app icon" width="88" height="88" />
-          <h1>Your bills, on the fridge.</h1>
-          <p class="lede">Every bill becomes a slip under a magnet on your fridge door. A yellow flag when it’s due soon, a red magnet when it’s late, and a big blue <strong>PAID</strong> stamp when you’ve paid it.</p>
+          <span class="tape">Bill tracker for iPhone</span>
+          <h1>Your bills, on&nbsp;the&nbsp;fridge.</h1>
+          <p class="lede">Every bill becomes a slip under a magnet on your fridge door. A yellow flag when it’s due soon, a red magnet when it’s late, and a big <span class="paid-word">PAID</span> stamp when you’ve paid it.</p>
           <div class="cta-row">
-            <a class="store-badge" href="#" aria-disabled="true">
-              <svg width="20" height="24" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <a class="store" id="app-store" href="#app-store">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg>
               <span><small>Coming soon to the</small>App Store</span>
             </a>
             <span class="note">Free · iPhone and iPad · iOS 26</span>
           </div>
         </div>
-        <div class="hero-phone">
-          <img src="assets/screens/kitchen.png" alt="The Fridgie kitchen: a white fridge with bill slips on its door, a counter and a calendar on the wall" width="412" height="866" />
-        </div>
+        <figure class="hero-phone">
+          <img src="assets/screens/kitchen.png" alt="The Fridgie kitchen: a white fridge with bill slips on its door, a calendar and a clock on the wall, and the next bill to pay below" width="412" height="866" />
+          <figcaption class="sticky">1 late?<br />Tap <strong>Pay</strong>.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -51,27 +52,42 @@
         <span class="eyebrow">How it works</span>
         <h2>Three steps, every month.</h2>
         <ol class="steps">
-          <li><span class="step-n">1</span><h3>Put your bills up</h3><p>Rent, power, water, internet, cards, loans, tuition, taxes. Pick what kind of bill it is: the same every time, different each time, installments, or one-off.</p></li>
-          <li><span class="step-n">2</span><h3>Get reminded</h3><p>A heads-up before each bill is due, on the day, and again if it’s late. For bills that change, Fridgie asks you for the amount.</p></li>
-          <li><span class="step-n">3</span><h3>Stamp it PAID</h3><p>Tap the slip, check the amount, and the stamp comes down. Changed your mind? Undo is right there.</p></li>
+          <li class="slip">
+            <span class="magnet" style="--m: #3a7d5c"></span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"/></svg></span>
+            <h3>Put your bills up</h3>
+            <p>Rent, power, water, internet, cards, loans, insurance, tuition. Choose the kind: the same every time, changes each time, installments, or one-time.</p>
+          </li>
+          <li class="slip">
+            <span class="magnet" style="--m: #d9a521"></span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,71.1a8,8,0,0,1-10.78-3.42,94.13,94.13,0,0,0-33.46-36.91,8,8,0,1,1,8.54-13.54,111.46,111.46,0,0,1,39.12,43.09A8,8,0,0,1,224,71.1ZM35.71,72a8,8,0,0,0,7.1-4.32A94.13,94.13,0,0,1,76.27,30.77a8,8,0,1,0-8.54-13.54A111.46,111.46,0,0,0,28.61,60.32,8,8,0,0,0,35.71,72Zm186.1,103.94A16,16,0,0,1,208,200H167.2a40,40,0,0,1-78.4,0H48a16,16,0,0,1-13.79-24.06C43.22,160.39,48,138.28,48,112a80,80,0,0,1,160,0C208,138.27,212.78,160.38,221.81,175.94ZM150.62,200H105.38a24,24,0,0,0,45.24,0ZM208,184c-10.64-18.27-16-42.49-16-72a64,64,0,0,0-128,0c0,29.52-5.38,53.74-16,72Z"/></svg></span>
+            <h3>Get reminded</h3>
+            <p>A heads-up before each bill is due, a reminder on the day at the time you pick, and a nudge if it’s late.</p>
+          </li>
+          <li class="slip">
+            <span class="magnet" style="--m: #2b4ea2"></span>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></svg></span>
+            <h3>Stamp it PAID</h3>
+            <p>Fill in the receipt, press the stamp, and PAID comes down on the slip. Changed your mind? Undo is right there.</p>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="section tint">
+    <section class="section wall">
       <div class="wrap split">
         <div class="split-copy">
           <span class="eyebrow">At a glance</span>
           <h2>Every slip tells you where it stands.</h2>
           <ul class="states">
-            <li><span class="dot flag"></span><div><strong>Yellow flag</strong> Due today or in the next 7 days.</div></li>
-            <li><span class="dot late"></span><div><strong>Red magnet</strong> Overdue, with how many days late.</div></li>
-            <li><span class="dot paid"></span><div><strong>PAID stamp</strong> Paid, until the next one comes close.</div></li>
-            <li><span class="dot loan"></span><div><strong>Progress bar</strong> Installments, like “8 of 24 paid”.</div></li>
+            <li><span class="mini flag"></span><div><strong>Yellow flag</strong>Due today or in the next 7 days.</div></li>
+            <li><span class="mini late"></span><div><strong>Red magnet</strong>Overdue, with how many days late.</div></li>
+            <li><span class="mini paid"></span><div><strong>PAID stamp</strong>Paid, until the next one comes close.</div></li>
+            <li><span class="mini loan"></span><div><strong>Progress bar</strong>Installments, like “9 of 24 paid”.</div></li>
           </ul>
-          <p>The notepad on the freezer door adds up the month: what’s due, what’s paid and what’s left.</p>
+          <p>Pay from the receipt: the amount, the day you paid, and what you paid with. Then press the stamp.</p>
         </div>
-        <img class="phone-shot" src="assets/screens/mark-paid.png" alt="Marking an electricity bill paid: the amount, the date and what it was paid with" width="412" height="866" loading="lazy" />
+        <img class="phone-shot" src="assets/screens/mark-paid.png" alt="Marking an electricity bill paid: the amount, the date, what it was paid with, and a round stamp button" width="412" height="866" loading="lazy" />
       </div>
     </section>
 
@@ -80,31 +96,58 @@
         <span class="eyebrow">Features</span>
         <h2>Made for real household bills.</h2>
         <div class="features">
-          <article><h3>Bills that change</h3><p>Electricity and water are different every month. Fridgie estimates from your last three bills until you type the real amount.</p></article>
-          <article><h3>Loans that count down</h3><p>See how many payments are made, what’s left to pay, and when it ends.</p></article>
-          <article><h3>Autopay</h3><p>For direct debits, Fridgie marks the bill paid on its due date, so the fridge stays right without you.</p></article>
-          <article><h3>Kitchen calendar</h3><p>Slide along the wall to the calendar: due days circled in blue, red or yellow.</p></article>
-          <article><h3>History</h3><p>What you actually paid each month, by category, and how often you paid on time.</p></article>
-          <article><h3>Widgets</h3><p>Due soon on your Home Screen, free. Next bill, This month, a mini fridge and Lock Screen widgets with Pro.</p></article>
-          <article><h3>Any currency</h3><p>Each bill keeps its own currency; totals are converted into yours.</p></article>
-          <article><h3>Private by design</h3><p>No account, no bank connection, no tracking. Your bills stay on your phone.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></svg></span><h3>Bills that change</h3><p>Electricity and water are different every month. Fridgie estimates from your last three bills until you type the real amount.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M200,75.64V40a16,16,0,0,0-16-16H72A16,16,0,0,0,56,40V76a16.07,16.07,0,0,0,6.4,12.8L114.67,128,62.4,167.2A16.07,16.07,0,0,0,56,180v36a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V180.36a16.09,16.09,0,0,0-6.35-12.77L141.27,128l52.38-39.6A16.05,16.05,0,0,0,200,75.64ZM72,40H184V75.64L178.23,80H77.33L72,76Zm56,78L98.67,96h58.4Zm56,98H72V180l48-36v24a8,8,0,0,0,16,0V144.08l48,36.28Z"/></svg></span><h3>Loans that count down</h3><p>“9 of 24 paid”, what’s left to pay, and a celebration when it’s paid off.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,48V96a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h28.69L182.06,73.37a79.56,79.56,0,0,0-56.13-23.43h-.45A79.52,79.52,0,0,0,69.59,72.71,8,8,0,0,1,58.41,61.27a96,96,0,0,1,135,.79L208,76.69V48a8,8,0,0,1,16,0ZM186.41,183.29a80,80,0,0,1-112.47-.66L59.31,168H88a8,8,0,0,0,0-16H40a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V179.31l14.63,14.63A95.43,95.43,0,0,0,130,222.06h.53a95.36,95.36,0,0,0,67.07-27.33,8,8,0,0,0-11.18-11.44Z"/></svg></span><h3>Autopay</h3><p>For direct debits, Fridgie marks the bill paid on its due date, so the fridge stays right without you.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M214.67,72H200V40a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V72H41.33C27.36,72,16,82.77,16,96v80a8,8,0,0,0,8,8H56v32a8,8,0,0,0,8,8H192a8,8,0,0,0,8-8V184h32a8,8,0,0,0,8-8V96C240,82.77,228.64,72,214.67,72ZM72,48H184V72H72ZM184,208H72V160H184Zm40-40H200V152a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v16H32V96c0-4.41,4.19-8,9.33-8H214.67c5.14,0,9.33,3.59,9.33,8Zm-24-52a12,12,0,1,1-12-12A12,12,0,0,1,200,116Z"/></svg></span><h3>Print or share</h3><p>Tap any receipt to print it, send it to family, or save it as a picture.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-68-76a12,12,0,1,1-12-12A12,12,0,0,1,140,132Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,132ZM96,172a12,12,0,1,1-12-12A12,12,0,0,1,96,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,140,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,172Z"/></svg></span><h3>Kitchen calendar</h3><p>Due days circled by status, with the month’s due, paid and left.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M240,152H199.55a73.54,73.54,0,0,0,.45-8,72,72,0,0,0-144,0,73.54,73.54,0,0,0,.45,8H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM72,144a56,56,0,1,1,111.41,8H72.59A56.13,56.13,0,0,1,72,144Zm144,56a8,8,0,0,1-8,8H48a8,8,0,0,1,0-16H208A8,8,0,0,1,216,200ZM72.84,43.58a8,8,0,0,1,14.32-7.16l8,16a8,8,0,0,1-14.32,7.16Zm-56,48.84a8,8,0,0,1,10.74-3.57l16,8a8,8,0,0,1-7.16,14.31l-16-8A8,8,0,0,1,16.84,92.42Zm192,15.16a8,8,0,0,1,3.58-10.73l16-8a8,8,0,1,1,7.16,14.31l-16,8a8,8,0,0,1-10.74-3.58Zm-48-55.16,8-16a8,8,0,0,1,14.32,7.16l-8,16a8,8,0,1,1-14.32-7.16Z"/></svg></span><h3>A kitchen that keeps time</h3><p>The window follows your day from sunrise to stars, the clock shows your time, and the light switch turns on dark mode.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-96,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,200,136Zm0,64H152V152h48v48Z"/></svg></span><h3>Widgets</h3><p>Due soon on your Home Screen, free. Next bill, This month, a mini fridge and Lock Screen widgets with Pro.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm40-68a28,28,0,0,1-28,28h-4v8a8,8,0,0,1-16,0v-8H104a8,8,0,0,1,0-16h36a12,12,0,0,0,0-24H116a28,28,0,0,1,0-56h4V72a8,8,0,0,1,16,0v8h16a8,8,0,0,1,0,16H116a12,12,0,0,0,0,24h24A28,28,0,0,1,168,148Z"/></svg></span><h3>Any currency</h3><p>Each bill keeps its own currency. Totals are converted into yours.</p></article>
+          <article><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></svg></span><h3>Private by design</h3><p>No account, no bank connection, no tracking. Your bills stay on your phone.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section tint">
+    <section class="section paper2">
       <div class="wrap split reverse">
-        <img class="phone-shot" src="assets/screens/pro-fridge.png" alt="The Pro side-by-side fridge: a blue display and 20 spots across two stainless doors" width="412" height="866" loading="lazy" />
+        <img class="phone-shot" src="assets/screens/receipts.png" alt="The Receipts tab: one printed receipt per month, each stamped with how much was paid on time" width="412" height="866" loading="lazy" />
+        <div class="split-copy">
+          <span class="eyebrow">Receipts</span>
+          <h2>A receipt for every month.</h2>
+          <p>Every payment you stamp lands on that month’s receipt, with the total and how much you paid on time. A By category receipt shows where the money went.</p>
+          <p>Tap a receipt to see it up close, then print it, send it to the family, or save it to Photos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wall">
+      <div class="wrap split">
         <div class="split-copy">
           <span class="eyebrow">Fridgie Pro</span>
           <h2>Upgrade the fridge.</h2>
           <p>Free fits 5 bills on a white single-door fridge. Pro swaps it for a stainless side-by-side with room for 20, and a blue display that tells you what’s left to pay this month.</p>
-          <p>Pro also adds full history, the Pro widgets, kitchen themes, calendar styles, Face ID lock and app icons.</p>
+          <p>Pro also keeps every receipt and adds the Pro widgets, kitchen themes, calendar styles, Face ID lock and app icons.</p>
+        </div>
+        <img class="phone-shot" src="assets/screens/pro-fridge.png" alt="The Pro side-by-side fridge: a blue display and 20 spots across two stainless doors" width="412" height="866" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow">Take a look around</span>
+        <h2>The rest of the kitchen.</h2>
+        <div class="gallery" tabindex="0" aria-label="More screens">
+          <figure><img src="assets/screens/first-launch.png" alt="First launch: pick the bills you pay" width="412" height="866" loading="lazy" /><figcaption>Pick your bills</figcaption></figure>
+          <figure><img src="assets/screens/new-bill.png" alt="Adding a new bill: the slip fills in as you type" width="412" height="866" loading="lazy" /><figcaption>Write a new slip</figcaption></figure>
+          <figure><img src="assets/screens/all-bills.png" alt="Every bill on the fridge, grouped late, this week, later and paid" width="412" height="866" loading="lazy" /><figcaption>All your bills</figcaption></figure>
+          <figure><img src="assets/screens/calendar.png" alt="The calendar with due days circled by status" width="412" height="866" loading="lazy" /><figcaption>The calendar</figcaption></figure>
+          <figure><img src="assets/screens/pro-price.png" alt="Fridgie Pro plans" width="412" height="866" loading="lazy" /><figcaption>Fridgie Pro</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section">
+    <section id="pricing" class="section paper2">
       <div class="wrap">
         <span class="eyebrow">Pricing</span>
         <h2>Free to start. Pro when your fridge fills up.</h2>
@@ -112,13 +155,13 @@
           <article class="plan">
             <h3>Free</h3>
             <p class="price">₱0</p>
-            <ul><li>5 bills on a single-door fridge</li><li>Reminders and overdue nudges</li><li>3 months of history</li><li>Due soon widget</li></ul>
+            <ul><li>5 bills on a single-door fridge</li><li>Reminders and late nudges</li><li>3 months of receipts</li><li>Due soon widget</li></ul>
           </article>
           <article class="plan featured">
             <span class="badge">7 days free</span>
             <h3>Pro Yearly</h3>
             <p class="price">₱799 <small>/ year</small></p>
-            <ul><li>Side-by-side fridge, 20 bills</li><li>Full history</li><li>All widgets</li><li>Themes, Face ID lock, icons</li></ul>
+            <ul><li>Side-by-side fridge, 20 bills</li><li>Every receipt</li><li>All widgets</li><li>Themes, Face ID lock, icons</li></ul>
           </article>
           <article class="plan">
             <h3>Pro Monthly</h3>
@@ -135,14 +178,15 @@
       </div>
     </section>
 
-    <section class="section tint">
-      <div class="wrap split">
-        <div class="split-copy">
-          <span class="eyebrow">Questions?</span>
-          <h2>We’re here to help.</h2>
-          <p>Read the answers to common questions on the <a href="support.html">Support page</a>, or email <a href="mailto:tania.dev.ph@gmail.com?subject=Fridgie">tania.dev.ph@gmail.com</a>.</p>
+    <section class="section">
+      <div class="wrap-narrow">
+        <div class="contact">
+          <div>
+            <h2>Questions?</h2>
+            <p>Read the answers on the <a href="support.html">Support page</a>, or write to us. We read every message.</p>
+          </div>
+          <a class="button" href="mailto:tania.dev.ph@gmail.com?subject=Fridgie"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg> Email us</a>
         </div>
-        <img class="phone-shot" src="assets/screens/calendar.png" alt="The Calendar tab with due days circled by status" width="412" height="866" loading="lazy" />
       </div>
     </section>
   </main>

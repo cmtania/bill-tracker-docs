@@ -1,36 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
-  <title id="t">Fridgie</title>
-  <!-- The app icon's design: a bill under a teal magnet on the fridge door, stamped paid. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <title>Fridgie</title>
   <defs>
-    <linearGradient id="door" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" />
-      <stop offset=".6" stop-color="#EEF2EF" />
-      <stop offset="1" stop-color="#D3DBD5" />
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6EEE8"/><stop offset="1" stop-color="#C6D4CB"/>
+    </linearGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2=".25">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F2F5F2"/><stop offset="1" stop-color="#D5DDD7"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C3CCC6"/><stop offset="1" stop-color="#9EA9A2"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9AA5A0"/><stop offset=".45" stop-color="#FFFFFF"/><stop offset="1" stop-color="#8A958F"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".42" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#FFFFFC"/><stop offset=".55" stop-color="#FBF7EC"/><stop offset="1" stop-color="#EDE6D3"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/><stop offset=".5" stop-color="#5A4E30" stop-opacity=".1"/>
+      <stop offset=".52" stop-color="#FFFFFF" stop-opacity=".6"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="curl" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9D1BC"/><stop offset=".5" stop-color="#F7F2E5"/><stop offset="1" stop-color="#C9BFA6"/>
     </linearGradient>
     <radialGradient id="magnet" cx=".36" cy=".3" r=".75">
-      <stop offset="0" stop-color="#5FE0C6" />
-      <stop offset=".5" stop-color="#138A78" />
-      <stop offset="1" stop-color="#0A5247" />
+      <stop offset="0" stop-color="#6FF0D4"/><stop offset=".45" stop-color="#16947F"/><stop offset="1" stop-color="#084A40"/>
     </radialGradient>
-    <clipPath id="tile"><rect width="120" height="120" rx="27" /></clipPath>
+    <radialGradient id="seal" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#7EA2F0"/><stop offset=".45" stop-color="#3460C2"/><stop offset="1" stop-color="#1A3478"/>
+    </radialGradient>
+    <radialGradient id="sealFace" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#4A74D6"/><stop offset="1" stop-color="#22448F"/>
+    </radialGradient>
+    <pattern id="brush" width="6" height="1024" patternUnits="userSpaceOnUse">
+      <rect width="2" height="1024" fill="#FFFFFF" fill-opacity=".08"/>
+    </pattern>
+    <clipPath id="doors"><path d="M96 96 Q96 60 132 60 H892 Q928 60 928 96 V1024 H96 Z"/></clipPath>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="230"/></clipPath>
   </defs>
   <g clip-path="url(#tile)">
-    <rect width="120" height="120" fill="url(#door)" />
-    <rect y="17.6" width="120" height="1.9" fill="#B7C1BA" />
-    <rect x="12.2" y="27.2" width="4.7" height="65.6" rx="2.35" fill="#AEB8B1" />
-    <g transform="rotate(-6 65.6 65.6)">
-      <path d="M38.7 35.2 H92.6 V95.2 l-3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.9 -2.6 -3.9 2.6 -3.7 -2.6 Z" fill="#FFFDF6" />
-      <rect x="45.5" y="47.6" width="23.4" height="3.5" rx="1.75" fill="#D3CCBA" />
-      <rect x="45.5" y="54.1" width="35.2" height="3.5" rx="1.75" fill="#E3DDCE" />
-      <rect x="45.5" y="62.1" width="23" height="6.3" rx="1.9" fill="#1B2421" />
-      <rect x="45.5" y="73.4" width="39.8" height="3.3" rx="1.65" fill="#E6E0D2" />
-      <rect x="45.5" y="73.4" width="26.5" height="3.3" rx="1.65" fill="#138A78" />
-    </g>
-    <g transform="rotate(-14 80.9 80.9)" opacity=".93">
-      <circle cx="80.9" cy="80.9" r="13.6" fill="#2B4EA2" fill-opacity=".07" stroke="#2B4EA2" stroke-width="2.6" />
-      <path d="M74.1 81.1 l4.7 4.7 l8.9 -9.8" fill="none" stroke="#2B4EA2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-    </g>
-    <circle cx="65.6" cy="34.5" r="8.9" fill="url(#magnet)" />
-    <ellipse cx="62.3" cy="30.7" rx="3" ry="1.9" fill="#fff" opacity=".7" />
+
+  <!-- The kitchen wall, with the fridge's shadow on it. -->
+  <rect width="1024" height="1024" fill="url(#wall)"/>
+  <path d="M90 90 Q90 40 140 40 H900 Q950 40 950 90 V1024 H90 Z" fill="#33413B" opacity=".25" transform="translate(18 10)"/>
+
+  <!-- The fridge body: its right side shows, the doors sit on the front. -->
+  <path d="M70 100 Q70 34 136 34 H900 Q966 34 966 100 V1024 H70 Z" fill="url(#side)"/>
+  <g clip-path="url(#doors)">
+    <!-- Freezer door. -->
+    <rect x="96" y="60" width="832" height="254" fill="url(#door)"/>
+    
+    <!-- The seal between the doors: a dark gap and the grey gasket. -->
+    <rect x="96" y="314" width="832" height="26" fill="#8E9A93"/>
+    <rect x="96" y="322" width="832" height="9" rx="4" fill="#5E6A64" opacity=".7"/>
+    <!-- Main door. -->
+    <rect x="96" y="340" width="832" height="700" fill="url(#door)"/>
+    
+    <!-- Bevels: light along the top and left edges of each door, dark along the right. -->
+    <rect x="96" y="60" width="832" height="6" fill="#FFFFFF" opacity=".9"/>
+    <rect x="96" y="340" width="832" height="6" fill="#FFFFFF" opacity=".9"/>
+    <rect x="96" y="306" width="832" height="8" fill="#B9C3BC" opacity=".7"/>
+    <rect x="96" y="60" width="6" height="980" fill="#FFFFFF" opacity=".7"/>
+    <rect x="916" y="60" width="12" height="980" fill="#B9C3BC" opacity=".8"/>
+    <!-- A soft reflection across the doors. -->
+    <rect x="96" y="60" width="832" height="980" fill="url(#sheen)"/>
+  </g>
+
+  <!-- Handles on their mounts, with shadows on the doors. -->
+  <rect x="146" y="118" width="44" height="150" rx="22" fill="#2E3A35" opacity="0.28" transform="translate(12 12)"/>
+  <rect x="140" y="104" width="46" height="34" rx="10" fill="#7D8883"/>
+  <rect x="140" y="248" width="46" height="34" rx="10" fill="#7D8883"/>
+  <rect x="142" y="112" width="42" height="164" rx="21" fill="url(#handle)"/>
+  <rect x="146" y="412" width="44" height="470" rx="22" fill="#2E3A35" opacity="0.28" transform="translate(14 14)"/>
+  <rect x="140" y="398" width="46" height="40" rx="10" fill="#7D8883"/>
+  <rect x="140" y="852" width="46" height="40" rx="10" fill="#7D8883"/>
+  <rect x="142" y="406" width="42" height="482" rx="21" fill="url(#handle)"/>
+
+  <!-- The bill: a drop shadow, the paper, a fold, its edge, and the curled corner. -->
+  <g transform="rotate(-6 590 600)">
+    <path d="M348 352 H820 V846 l-32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 Z" fill="#2E3A35" opacity="0.32" transform="translate(16 26)"/>
+    <path d="M348 352 H736 L820 436 V846 l-32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 Z" fill="url(#paper)"/>
+    <path d="M348 352 H736 L820 436 V846 l-32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 -32 24 -32 -24 Z" fill="none" stroke="#D8CFB8" stroke-width="3"/>
+    <rect x="348" y="560" width="472" height="70" fill="url(#fold)"/>
+    <!-- The corner lifting off the door: the paper's back, and its shadow. -->
+    <path d="M736 352 L820 436 Q770 448 748 430 Q730 400 736 352 Z" fill="#33413B" opacity=".18"/>
+    <path d="M736 352 Q726 412 754 432 Q782 444 820 436 Z" fill="url(#curl)"/>
+    <path d="M736 352 Q726 412 754 432 Q782 444 820 436" fill="none" stroke="#BFB49A" stroke-width="2.5"/>
+    <!-- What's printed: the name, the amount, the tracker bar. -->
+    <rect x="408" y="436" width="210" height="32" rx="16" fill="#D3CCBA"/>
+    <rect x="408" y="494" width="300" height="30" rx="15" fill="#E3DDCE"/>
+    <rect x="408" y="560" width="206" height="58" rx="17" fill="#1B2421"/>
+    <rect x="408" y="660" width="350" height="30" rx="15" fill="#E6E0D2"/>
+    <rect x="408" y="660" width="232" height="30" rx="15" fill="#138A78"/>
+    <rect x="408" y="734" width="150" height="26" rx="13" fill="#E3DDCE"/>
+  </g>
+
+  <!-- The PAID seal: raised, glossy, scalloped, with an embossed check. -->
+  <g transform="rotate(-12 706 726)">
+    <path d="M706.0 576.0 L712.5 577.6 L718.6 581.6 L724.5 585.7 L730.3 588.1 L736.6 587.9 L743.5 585.9 L750.7 584.3 L757.3 585.0 L762.8 588.8 L767.3 594.6 L771.3 600.5 L776.0 604.8 L782.0 606.7 L789.2 607.2 L796.4 608.2 L802.4 611.1 L806.3 616.5 L808.5 623.5 L810.3 630.4 L813.2 636.0 L818.2 639.9 L824.8 642.8 L831.3 646.2 L835.9 651.0 L837.8 657.4 L837.4 664.7 L836.7 671.9 L837.6 678.1 L840.9 683.5 L846.1 688.5 L851.0 693.9 L853.7 700.0 L853.3 706.6 L850.4 713.4 L847.3 719.8 L846.0 726.0 L847.3 732.2 L850.4 738.6 L853.3 745.4 L853.7 752.0 L851.0 758.1 L846.1 763.5 L840.9 768.5 L837.6 773.9 L836.7 780.1 L837.4 787.3 L837.8 794.6 L835.9 801.0 L831.3 805.8 L824.8 809.2 L818.2 812.1 L813.2 816.0 L810.3 821.6 L808.5 828.5 L806.3 835.5 L802.4 840.9 L796.4 843.8 L789.2 844.8 L782.0 845.3 L776.0 847.2 L771.3 851.5 L767.3 857.4 L762.8 863.2 L757.3 867.0 L750.7 867.7 L743.5 866.1 L736.6 864.1 L730.3 863.9 L724.5 866.3 L718.6 870.4 L712.5 874.4 L706.0 876.0 L699.5 874.4 L693.4 870.4 L687.5 866.3 L681.7 863.9 L675.4 864.1 L668.5 866.1 L661.3 867.7 L654.7 867.0 L649.2 863.2 L644.7 857.4 L640.7 851.5 L636.0 847.2 L630.0 845.3 L622.8 844.8 L615.6 843.8 L609.6 840.9 L605.7 835.5 L603.5 828.5 L601.7 821.6 L598.8 816.0 L593.8 812.1 L587.2 809.2 L580.7 805.8 L576.1 801.0 L574.2 794.6 L574.6 787.3 L575.3 780.1 L574.4 773.9 L571.1 768.5 L565.9 763.5 L561.0 758.1 L558.3 752.0 L558.7 745.4 L561.6 738.6 L564.7 732.2 L566.0 726.0 L564.7 719.8 L561.6 713.4 L558.7 706.6 L558.3 700.0 L561.0 693.9 L565.9 688.5 L571.1 683.5 L574.4 678.1 L575.3 671.9 L574.6 664.7 L574.2 657.4 L576.1 651.0 L580.7 646.2 L587.2 642.8 L593.8 639.9 L598.8 636.0 L601.7 630.4 L603.5 623.5 L605.7 616.5 L609.6 611.1 L615.6 608.2 L622.8 607.2 L630.0 606.7 L636.0 604.8 L640.7 600.5 L644.7 594.6 L649.2 588.8 L654.7 585.0 L661.3 584.3 L668.5 585.9 L675.4 587.9 L681.7 588.1 L687.5 585.7 L693.4 581.6 L699.5 577.6 L706.0 576.0 Z" fill="#0E1E45" opacity=".45" transform="translate(12 18)"/>
+    <path d="M706.0 576.0 L712.5 577.6 L718.6 581.6 L724.5 585.7 L730.3 588.1 L736.6 587.9 L743.5 585.9 L750.7 584.3 L757.3 585.0 L762.8 588.8 L767.3 594.6 L771.3 600.5 L776.0 604.8 L782.0 606.7 L789.2 607.2 L796.4 608.2 L802.4 611.1 L806.3 616.5 L808.5 623.5 L810.3 630.4 L813.2 636.0 L818.2 639.9 L824.8 642.8 L831.3 646.2 L835.9 651.0 L837.8 657.4 L837.4 664.7 L836.7 671.9 L837.6 678.1 L840.9 683.5 L846.1 688.5 L851.0 693.9 L853.7 700.0 L853.3 706.6 L850.4 713.4 L847.3 719.8 L846.0 726.0 L847.3 732.2 L850.4 738.6 L853.3 745.4 L853.7 752.0 L851.0 758.1 L846.1 763.5 L840.9 768.5 L837.6 773.9 L836.7 780.1 L837.4 787.3 L837.8 794.6 L835.9 801.0 L831.3 805.8 L824.8 809.2 L818.2 812.1 L813.2 816.0 L810.3 821.6 L808.5 828.5 L806.3 835.5 L802.4 840.9 L796.4 843.8 L789.2 844.8 L782.0 845.3 L776.0 847.2 L771.3 851.5 L767.3 857.4 L762.8 863.2 L757.3 867.0 L750.7 867.7 L743.5 866.1 L736.6 864.1 L730.3 863.9 L724.5 866.3 L718.6 870.4 L712.5 874.4 L706.0 876.0 L699.5 874.4 L693.4 870.4 L687.5 866.3 L681.7 863.9 L675.4 864.1 L668.5 866.1 L661.3 867.7 L654.7 867.0 L649.2 863.2 L644.7 857.4 L640.7 851.5 L636.0 847.2 L630.0 845.3 L622.8 844.8 L615.6 843.8 L609.6 840.9 L605.7 835.5 L603.5 828.5 L601.7 821.6 L598.8 816.0 L593.8 812.1 L587.2 809.2 L580.7 805.8 L576.1 801.0 L574.2 794.6 L574.6 787.3 L575.3 780.1 L574.4 773.9 L571.1 768.5 L565.9 763.5 L561.0 758.1 L558.3 752.0 L558.7 745.4 L561.6 738.6 L564.7 732.2 L566.0 726.0 L564.7 719.8 L561.6 713.4 L558.7 706.6 L558.3 700.0 L561.0 693.9 L565.9 688.5 L571.1 683.5 L574.4 678.1 L575.3 671.9 L574.6 664.7 L574.2 657.4 L576.1 651.0 L580.7 646.2 L587.2 642.8 L593.8 639.9 L598.8 636.0 L601.7 630.4 L603.5 623.5 L605.7 616.5 L609.6 611.1 L615.6 608.2 L622.8 607.2 L630.0 606.7 L636.0 604.8 L640.7 600.5 L644.7 594.6 L649.2 588.8 L654.7 585.0 L661.3 584.3 L668.5 585.9 L675.4 587.9 L681.7 588.1 L687.5 585.7 L693.4 581.6 L699.5 577.6 L706.0 576.0 Z" fill="url(#seal)"/>
+    <circle cx="706" cy="726" r="114" fill="url(#sealFace)"/>
+    <circle cx="706" cy="726" r="114" fill="none" stroke="#9DB8F5" stroke-opacity=".55" stroke-width="5"/>
+    <circle cx="706" cy="726" r="122" fill="none" stroke="#11285E" stroke-opacity=".6" stroke-width="4"/>
+    <!-- The check: a dark groove under it, the white tick on top. -->
+    <path d="M650 730 l40 42 l82 -94" fill="none" stroke="#132C66" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 7)"/>
+    <path d="M650 730 l40 42 l82 -94" fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Gloss on the top left. -->
+    <path d="M610 668 Q636 612 706 598 Q672 632 652 690 Z" fill="#FFFFFF" opacity=".28"/>
+  </g>
+
+  <!-- The magnet holding the bill. -->
+  <ellipse cx="600" cy="378" rx="86" ry="30" fill="#2E3A35" opacity="0.32"/>
+  <circle cx="580" cy="330" r="80" fill="url(#magnet)"/>
+  <circle cx="580" cy="330" r="80" fill="none" stroke="#06352E" stroke-opacity=".35" stroke-width="4"/>
+  <ellipse cx="550" cy="296" rx="28" ry="17" fill="#FFFFFF" opacity=".75"/>
   </g>
 </svg>

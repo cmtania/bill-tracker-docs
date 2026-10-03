@@ -198,6 +198,12 @@ p { margin: 0 0 14px; }
 .section { padding: 96px 0; }
 .section.wall { background: linear-gradient(180deg, #e6eee8, var(--wall)); }
 .section.paper2 { background: var(--paper2); }
+
+/* iPhone and iPad: a centred heading over the iPad. */
+.center { text-align: center; }
+.section > .wrap.center > h2 { margin-left: auto; margin-right: auto; }
+.lede-center { max-width: 38em; margin: 0 auto; color: #303a36; font-size: 18px; }
+.ipad-shot { display: block; width: min(900px, 100%); margin: 40px auto 0; filter: drop-shadow(0 30px 44px rgba(30, 45, 38, 0.25)); }
 .section > .wrap > h2 { max-width: 16em; }
 
 /* How it works: three slips under magnets. */

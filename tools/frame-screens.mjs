@@ -16,8 +16,9 @@ const outDir = join(site, 'public/assets/screens');
 const buildDir = join(here, '.build');
 const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
-const phoneShot = (time) => `Simulator Screenshot - iPhone 17 Pro - 2026-10-03 at ${time}.png`;
-const padShot = (time) => `Simulator Screenshot - iPad Pro 13-inch (M5) - 2026-10-03 at ${time}.png`;
+// A capture time from 2026-10-03, or a file path relative to the raw folder.
+const phoneShot = (time) => time.endsWith('.png') ? time : `Simulator Screenshot - iPhone 17 Pro - 2026-10-03 at ${time}.png`;
+const padShot = (time) => time.endsWith('.png') ? time : `Simulator Screenshot - iPad Pro 13-inch (M5) - 2026-10-03 at ${time}.png`;
 
 // File on the site ← capture.
 const PHONES = {
@@ -31,12 +32,12 @@ const PHONES = {
   themes: '21.49.52',
   widgets: '21.51.56',
   pick: '21.44.03',
+  // Build 4's Pro screen (Yearly picked), without the free week the app dropped
+  // (App Review 3.1.2(c), 2026-10-15).
+  pro: 'pro/Simulator Screenshot - iPhone 17 Pro - 2026-10-15 at 22.05.39.png',
 };
 const PADS = {
   'ipad-kitchen': '21.34.21',
-  // The Pro fridge up close, not the Pro screen: that capture still had the free week,
-  // which the app dropped (App Review 3.1.2(c), 2026-10-15).
-  'pro-fridge': '21.33.34',
 };
 
 const PHONE = { w: 1206, h: 2622 };

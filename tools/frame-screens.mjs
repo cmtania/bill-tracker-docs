@@ -31,10 +31,12 @@ const PHONES = {
   themes: '21.49.52',
   widgets: '21.51.56',
   pick: '21.44.03',
-  pro: '21.44.17',
 };
 const PADS = {
   'ipad-kitchen': '21.34.21',
+  // The Pro fridge up close, not the Pro screen: that capture still had the free week,
+  // which the app dropped (App Review 3.1.2(c), 2026-10-15).
+  'pro-fridge': '21.33.34',
 };
 
 const PHONE = { w: 1206, h: 2622 };

@@ -242,6 +242,7 @@ p { margin: 0 0 14px; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .split-copy p { color: #303a36; font-size: 18px; }
 .phone-shot { justify-self: center; width: min(340px, 100%); filter: drop-shadow(0 26px 36px rgba(30, 45, 38, 0.22)); }
+.pad-shot { justify-self: center; width: min(560px, 100%); filter: drop-shadow(0 26px 36px rgba(30, 45, 38, 0.22)); }
 
 /* Slip states, drawn as tiny slips. */
 .states { display: grid; gap: 16px; margin: 26px 0 24px; padding: 0; list-style: none; }

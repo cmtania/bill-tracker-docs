@@ -1,0 +1,11 @@
+// Cloudflare Workers Builds deploys this site with `npx wrangler deploy`. Without this file,
+// wrangler "autoconfigures" the project and the build fails. With it, wrangler runs our own
+// build (`npm run build`, Vite) and uploads dist/ as static assets. Same setup as miluv-docs.
+// `name` must match the Worker's name in the Cloudflare dashboard.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bill-tracker-docs",
+  "compatibility_date": "2026-10-16",
+  "build": { "command": "npm run build" },
+  "assets": { "directory": "./dist" }
+}
